@@ -150,10 +150,12 @@ promo20(usersArray);
 // ***************************************************************************
 
 const addActive = (users) => {
-  for (let key of users) {
+  const usersCopy = [...users]
+
+  for (let key of usersCopy) {
     key.isActive = true;
   }
-  console.log(users);
+  console.log(usersCopy);
 };
 
 addActive(usersArray);
